@@ -1,0 +1,110 @@
+k value of 1 waves is 9.621538760708443
+Amplitude of 1 waves is 0.4738191551886402
+k value of 2 waves is 9.660175222599685
+Amplitude of 2 waves is 0.826887070375585
+k value of 2 waves is 14.254614081480096
+Amplitude of 2 waves is 0.4942061609737175
+k value of 3 waves is 10.479276583077866
+Amplitude of 3 waves is 1.250735691035467
+k value of 3 waves is 12.318078795786011
+Amplitude of 3 waves is 0.22072482465062618
+k value of 3 waves is 11.063294567215836
+Amplitude of 3 waves is 0.7829211510102837
+k value of 4 waves is 11.07943867292927
+Amplitude of 4 waves is 0.6551758888492155
+k value of 4 waves is 11.3036443392471
+Amplitude of 4 waves is 1.47870165716701
+k value of 4 waves is 8.685170903109666
+Amplitude of 4 waves is 0.5075959241800313
+k value of 4 waves is 11.143004915191108
+Amplitude of 4 waves is 0.8455450301904626
+k value of 5 waves is 10.741141494847568
+Amplitude of 5 waves is 0.016909778036653514
+k value of 5 waves is 10.325107859063046
+Amplitude of 5 waves is 0.9711407206283691
+k value of 5 waves is 11.563077340407174
+Amplitude of 5 waves is 0.8421882063517827
+k value of 5 waves is 11.724748454759878
+Amplitude of 5 waves is 0.6653864509794687
+k value of 5 waves is 11.820383398600516
+Amplitude of 5 waves is 0.6790319464680271
+k value of 6 waves is 10.22491266317349
+Amplitude of 6 waves is 0.8514196962445189
+k value of 6 waves is 9.400184222150733
+Amplitude of 6 waves is 0.254682374657018
+k value of 6 waves is 10.369972404182715
+Amplitude of 6 waves is 1.7471474285600905
+k value of 6 waves is 12.014152240272148
+Amplitude of 6 waves is 1.6118288055020407
+k value of 6 waves is 11.098608853714316
+Amplitude of 6 waves is 1.098971201337407
+k value of 6 waves is 9.283191966244983
+Amplitude of 6 waves is 2.1279349223442123
+k value of 7 waves is 11.892286314502392
+Amplitude of 7 waves is 0.17184627468162247
+k value of 7 waves is 10.839377901244033
+Amplitude of 7 waves is 0.224108167915744
+k value of 7 waves is 10.533981002869718
+Amplitude of 7 waves is 1.1842876126377861
+k value of 7 waves is 10.969800846715296
+Amplitude of 7 waves is 1.3757222705303178
+k value of 7 waves is 10.239408791236674
+Amplitude of 7 waves is 1.6365537040439582
+k value of 7 waves is 12.678634622789774
+Amplitude of 7 waves is 1.657450147145136
+k value of 7 waves is 12.316790494058075
+Amplitude of 7 waves is 0.8791355330561288
+k value of 8 waves is 10.62201260428912
+Amplitude of 8 waves is 0.06844188285369064
+k value of 8 waves is 10.597435168594938
+Amplitude of 8 waves is 1.634584097201524
+k value of 8 waves is 8.999608736493999
+Amplitude of 8 waves is 0.8607685402790997
+k value of 8 waves is 9.415851208885552
+Amplitude of 8 waves is 0.3213082370785022
+k value of 8 waves is 10.893228355354683
+Amplitude of 8 waves is 0.5371328188211001
+k value of 8 waves is 9.967130359579539
+Amplitude of 8 waves is 1.526402159256275
+k value of 8 waves is 11.867195789258233
+Amplitude of 8 waves is 0.07869841347934275
+k value of 8 waves is 12.578215367725697
+Amplitude of 8 waves is 1.9711426541958224
+k value of 9 waves is 11.050409993083088
+Amplitude of 9 waves is 0.2330422427148969
+k value of 9 waves is 11.09758270925312
+Amplitude of 9 waves is 1.8239450198041187
+k value of 9 waves is 11.946158519471622
+Amplitude of 9 waves is 0.5703763763128213
+k value of 9 waves is 12.88970966340784
+Amplitude of 9 waves is 0.663153932057526
+k value of 9 waves is 11.500358747120371
+Amplitude of 9 waves is 0.556088486800593
+k value of 9 waves is 12.807693817741008
+Amplitude of 9 waves is 0.407921286079302
+k value of 9 waves is 9.393135302479585
+Amplitude of 9 waves is 0.09925584901234588
+k value of 9 waves is 11.334625438155927
+Amplitude of 9 waves is 1.630181589695815
+k value of 9 waves is 11.29408852355589
+Amplitude of 9 waves is 0.05313248456121998
+k value of 10 waves is 10.709759312439378
+Amplitude of 10 waves is 0.4648978835903625
+k value of 10 waves is 11.849465520723843
+Amplitude of 10 waves is 1.4048021126908459
+k value of 10 waves is 10.994514839290055
+Amplitude of 10 waves is 0.07451085222403799
+k value of 10 waves is 11.678970386439797
+Amplitude of 10 waves is 0.30745659035054057
+k value of 10 waves is 10.149043923265552
+Amplitude of 10 waves is 0.40179225818016845
+k value of 10 waves is 10.597663528328571
+Amplitude of 10 waves is 1.0877454895047762
+k value of 10 waves is 9.932876726457339
+Amplitude of 10 waves is 0.15527887365500892
+k value of 10 waves is 9.81568329913442
+Amplitude of 10 waves is 1.14548912037403
+k value of 10 waves is 9.825417783972172
+Amplitude of 10 waves is 0.545848160880795
+k value of 10 waves is 10.419932109064858
+Amplitude of 10 waves is 0.5982279450150135

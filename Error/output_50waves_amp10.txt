@@ -1,0 +1,100 @@
+k value of wave 0 is 9.990228100373129
+Amplitude of wave 0 is 1.2689373260577987
+k value of wave 1 is 10.652686658043265
+Amplitude of wave 1 is 1.5416008808751087
+k value of wave 2 is 12.380075482265783
+Amplitude of wave 2 is 0.6335482687393638
+k value of wave 3 is 10.81367943818413
+Amplitude of wave 3 is 0.65277677348775
+k value of wave 4 is 9.70446426998354
+Amplitude of wave 4 is 0.4033470550491953
+k value of wave 5 is 9.84357849703756
+Amplitude of wave 5 is 1.2604225043340216
+k value of wave 6 is 10.393196440957581
+Amplitude of wave 6 is 0.01856216753519162
+k value of wave 7 is 11.59256339572757
+Amplitude of wave 7 is 1.2186504475789646
+k value of wave 8 is 9.869060954360853
+Amplitude of wave 8 is 0.5411894318026812
+k value of wave 9 is 10.42922267452006
+Amplitude of wave 9 is 0.20037107712926405
+k value of wave 10 is 11.468000515671836
+Amplitude of wave 10 is 0.4497646045754578
+k value of wave 11 is 10.374359697143426
+Amplitude of wave 11 is 0.054556619762770674
+k value of wave 12 is 10.090835701035848
+Amplitude of wave 12 is 1.0952035105557403
+k value of wave 13 is 10.066678213048434
+Amplitude of wave 13 is 1.3574733084122728
+k value of wave 14 is 11.443819946676507
+Amplitude of wave 14 is 1.0680715518544204
+k value of wave 15 is 11.660547456818781
+Amplitude of wave 15 is 0.41219789073229485
+k value of wave 16 is 9.606228098977429
+Amplitude of wave 16 is 1.5465792260832931
+k value of wave 17 is 10.438985795124166
+Amplitude of wave 17 is 0.3233560332699421
+k value of wave 18 is 10.434524380436267
+Amplitude of wave 18 is 0.41344684947993166
+k value of wave 19 is 12.368929291722095
+Amplitude of wave 19 is 0.03975210843838934
+k value of wave 20 is 12.421865327440482
+Amplitude of wave 20 is 0.13559046519897225
+k value of wave 21 is 11.53413945132225
+Amplitude of wave 21 is 1.5891123626759496
+k value of wave 22 is 11.25991315561549
+Amplitude of wave 22 is 2.368507637624661
+k value of wave 23 is 11.60617093082763
+Amplitude of wave 23 is 0.10964990836646664
+k value of wave 24 is 11.093939495322198
+Amplitude of wave 24 is 0.5619976282389489
+k value of wave 25 is 12.843917503863356
+Amplitude of wave 25 is 1.595716140129486
+k value of wave 26 is 11.192029504597118
+Amplitude of wave 26 is 0.049699012137768
+k value of wave 27 is 10.303361675849732
+Amplitude of wave 27 is 0.1116756960699076
+k value of wave 28 is 11.627787276617456
+Amplitude of wave 28 is 0.3801893018542572
+k value of wave 29 is 12.421728171228994
+Amplitude of wave 29 is 0.40223678956016806
+k value of wave 30 is 10.576213045216615
+Amplitude of wave 30 is 1.238539979512176
+k value of wave 31 is 10.931069717018119
+Amplitude of wave 31 is 0.06860893916251114
+k value of wave 32 is 10.343049901955377
+Amplitude of wave 32 is 0.6437719898004458
+k value of wave 33 is 11.659733962097034
+Amplitude of wave 33 is 0.3205843444715211
+k value of wave 34 is 10.97018571387542
+Amplitude of wave 34 is 0.609099576021783
+k value of wave 35 is 10.876984630115949
+Amplitude of wave 35 is 0.06116848527774706
+k value of wave 36 is 12.426333472694054
+Amplitude of wave 36 is 0.031202762377958153
+k value of wave 37 is 11.662167908102541
+Amplitude of wave 37 is 1.249099720213331
+k value of wave 38 is 12.00462535616114
+Amplitude of wave 38 is 0.9195421131133991
+k value of wave 39 is 12.471606027420043
+Amplitude of wave 39 is 1.1081604328290218
+k value of wave 40 is 9.020042652098653
+Amplitude of wave 40 is 0.552004085421085
+k value of wave 41 is 9.999767870416404
+Amplitude of wave 41 is 0.38060813871463045
+k value of wave 42 is 12.258477747808195
+Amplitude of wave 42 is 0.448348022947255
+k value of wave 43 is 11.157267604447233
+Amplitude of wave 43 is 1.2407233289254023
+k value of wave 44 is 11.4204532302337
+Amplitude of wave 44 is 0.2529744949259554
+k value of wave 45 is 13.593626182652972
+Amplitude of wave 45 is 0.23400643642287708
+k value of wave 46 is 11.42749542000072
+Amplitude of wave 46 is 0.16063568511336074
+k value of wave 47 is 11.620976347091041
+Amplitude of wave 47 is 0.9963452177936157
+k value of wave 48 is 10.471377675599395
+Amplitude of wave 48 is 0.21625544405790703
+k value of wave 49 is 10.869744205809797
+Amplitude of wave 49 is 0.8995510298653011
