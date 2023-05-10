@@ -1,9 +1,13 @@
 # Effects of CMB Telescope Beam Systematics on Measurements of B-Mode Polarization
 
-From CMB computer:
+## From CMB computer:
+
 Fraunhofer
+
 Beam
+
 Error
 
-My Jupyter notebooks:
+## My Jupyter notebooks:
+
 Notebooks
