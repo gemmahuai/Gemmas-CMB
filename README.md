@@ -1,10 +1,10 @@
 # Effects of CMB Telescope Beam Systematics on Measurements of B-Mode Polarization
 
-## main calculation:
+## Main - main calculation
 
-Main:
 
-Fhcalc.py: Functions used for generating a screen, including initialization, Gaussian illumination, circular truncation, FFT, interpolation, etc.
+### Fhcalc.py: 
+Functions used for generating a screen, including initialization, Gaussian illumination, circular truncation, FFT, interpolation, etc.
 
 ErrMask.py: Functions used for generating errors, including amplitude and phase errors, and rms calculation
 
