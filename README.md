@@ -21,7 +21,15 @@ Compares the beam window difference between a perturbed and unperturbed one.
 ### BEAM_leakage.py: 
 Generates a plot of leakage level (error^2) as a function of error amplitude for the fixed k_in=15 and k_out=25 and after noise normalization
 
-### r_calc:
+### r_calc: 
+A directory containing calculation of bias in r.
+
+camb_96896687_totcls.dat.txt: CMB power spectrum downloaded from the CAMB webpage
+
+RnNoise.py: Reads in the CMB text file 'camb_96896687_totcls.dat.txt', calculates the bias in r as a function of normalized noise, and outputs a text file including error amplitude ($C_1$ or $C_2$), normalized noise in k space, ell vectors, $\Delta r$, leakage power spectra, and RMS in real space. 
+
+plot_r.py: Reads in the output .csv file from RnNoise.py and plots $\Delta r$ as a function of noise
+
 
 
 
