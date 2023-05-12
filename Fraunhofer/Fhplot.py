@@ -46,41 +46,41 @@ thetamax = 2*np.pi/180. # 2 degrees in radians
 theta_vec = np.linspace(-thetamax,thetamax,N_theta) 
 II0 = Fhcalc.Project_I_on_thetagrid(theta_vec,screen,lam) 
 theta_vec = np.linspace(0, 2*thetamax, N_theta)
-# fig = plt.figure(figsize=(8,6))
-# plt.imshow(screen['E'],extent=(0,screen['D'],screen['D'],0))
-# plt.colorbar()
+fig = plt.figure(figsize=(8,6))
+plt.imshow(screen['E'],extent=(0,screen['D'],screen['D'],0))
+plt.colorbar()
 # endtime = dt.datetime.now()
 # t = (endtime-starttime).seconds
 # print('Time = {:.2f}s'.format(t))
-#plt.savefig('/home/gemma/{}_E0.png'.format(name))
+plt.savefig('{}_E0.png'.format(name))
 
 
-starttime = dt.datetime.now()
-screen = {}
-screen['N'] = N_screen
-screen['D'] = 10
-Fhcalc.Initialize(screen)
-center = (screen['D']/2, screen['D']/2)
-Fhcalc.MultByGaussian(screen, center, 1.0) #sigma 1.0
-Fhcalc.InCircle(screen, center, 2.0) #radius 2.0
-c2 = (center[0]-0.2, center[1]-0.1)
-#c2 = (center[0], center[1])
-Fhcalc.CircleAtten(screen,c2,0.1,1.0*np.exp(np.pi * 1j))
-Fhcalc.ScreenFFT(screen)
+# starttime = dt.datetime.now()
+# screen = {}
+# screen['N'] = N_screen
+# screen['D'] = 10
+# Fhcalc.Initialize(screen)
+# center = (screen['D']/2, screen['D']/2)
+# Fhcalc.MultByGaussian(screen, center, 1.0) #sigma 1.0
+# Fhcalc.InCircle(screen, center, 2.0) #radius 2.0
+# c2 = (center[0]-0.2, center[1]-0.1)
+# #c2 = (center[0], center[1])
+# Fhcalc.CircleAtten(screen,c2,0.1,1.0*np.exp(np.pi * 1j))
+# Fhcalc.ScreenFFT(screen)
 
-lam = 0.002 #mm wavelength
-kphot = 2*np.pi/lam
-thetamaxdeg = 2.0
-thetamax = 2*np.pi/180. # 2 degrees in radians
-theta_vec = np.linspace(-thetamax,thetamax,N_theta) 
-# II1 = Fhcalc.Project_I_on_thetagrid(theta_vec,screen,lam) 
-# fig = plt.figure(figsize=(8,6))
-# plt.imshow(np.abs(screen['E']),extent=(0,screen['D'],screen['D'],0))
-# plt.colorbar()
-endtime = dt.datetime.now()
-t = (endtime-starttime).seconds
-print('Time = {:.2f}s'.format(t))
-#plt.savefig('/home/gemma/{}_E1.png'.format(name))
+# lam = 0.002 #mm wavelength
+# kphot = 2*np.pi/lam
+# thetamaxdeg = 2.0
+# thetamax = 2*np.pi/180. # 2 degrees in radians
+# theta_vec = np.linspace(-thetamax,thetamax,N_theta) 
+# # II1 = Fhcalc.Project_I_on_thetagrid(theta_vec,screen,lam) 
+# # fig = plt.figure(figsize=(8,6))
+# # plt.imshow(np.abs(screen['E']),extent=(0,screen['D'],screen['D'],0))
+# # plt.colorbar()
+# endtime = dt.datetime.now()
+# t = (endtime-starttime).seconds
+# print('Time = {:.2f}s'.format(t))
+# #plt.savefig('/home/gemma/{}_E1.png'.format(name))
 
 
 # Idiff = II1 - II0
