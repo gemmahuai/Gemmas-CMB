@@ -35,7 +35,7 @@ run_amp.sh: shell script that runs RnNoise.py and plot_r.py altogether for ampli
 run_phase.sh: shell script that runs RnNoise.py and plot_r.py altogether for phase perturbation.
 
 ### BEAM_leakage_filterk1.py:
-Iterates through different k's
+Iterates through different 
 
 
 ## From CMB computer:
