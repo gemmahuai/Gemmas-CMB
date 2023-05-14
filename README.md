@@ -1,4 +1,4 @@
-# Effects of CMB Telescope Beam Systematics on Measurements of B-Mode Polarization
+# Gemma's BS&T - Effects of CMB Telescope Beam Systematics on Measurements of B-Mode Polarization
 
 ## Main - main calculation
 
