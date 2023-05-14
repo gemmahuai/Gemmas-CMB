@@ -19,7 +19,7 @@ Tests if numerical & analytical beam window functions are consistent (no errors 
 Compares the beam window difference between a perturbed and unperturbed one.
 
 ### BEAM_leakage.py: 
-Generates a plot of leakage level (error^2) as a function of error amplitude for the fixed k_in=15 and k_out=25 and after noise normalization
+Generates a plot of leakage level (error^2) as a function of error amplitude for the fixed $k_{in}=15$ and $k_{out}=25$ and after noise normalization
 
 ### r_calc: 
 A directory containing calculation of bias in r.
@@ -30,8 +30,12 @@ RnNoise.py: Reads in the CMB text file 'camb_96896687_totcls.dat.txt', calculate
 
 plot_r.py: Reads in the output .csv file from RnNoise.py and plots $\Delta r$ as a function of noise
 
+run_amp.sh: shell script that runs RnNoise.py and plot_r.py altogether for amplitude perturbation.
 
+run_phase.sh: shell script that runs RnNoise.py and plot_r.py altogether for phase perturbation.
 
+### BEAM_leakage_filterk1.py:
+Iterates through different k's
 
 
 ## From CMB computer:
