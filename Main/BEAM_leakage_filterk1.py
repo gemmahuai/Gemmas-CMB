@@ -160,9 +160,13 @@ k_in_output = np.repeat(k_in, len(amp))
 amp_output = np.tile(amp, len(k_in))
 error_output = (error**2).flatten()
 noise_output = noise_norm.flatten()
-with open('data_k_r2_deg10.csv', 'w') as f:
+with open('./data_k_r2.csv', 'w') as f:
    writer = csv.writer(f, delimiter='\t')
    writer.writerows(zip(k_in_output, amp_output, noise_output, error_output))
+   # 1st col: inner radius
+   # 2nd col: input amplitude of error masks (C_1 or C_2)
+   # 3rd col: normalized noise level in k space
+   # 4th col: leakage level
 
 # fig = plt.figure(figsize=(10,8))
 # cl = ['red', 'orange', 'blue', 'purple']

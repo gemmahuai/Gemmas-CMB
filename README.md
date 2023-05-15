@@ -35,7 +35,17 @@ run_amp.sh: shell script that runs RnNoise.py and plot_r.py altogether for ampli
 run_phase.sh: shell script that runs RnNoise.py and plot_r.py altogether for phase perturbation.
 
 ### BEAM_leakage_filterk1.py:
-Iterates through different 
+Calculates the leakage level as a function of normalized noise in $k$ space, by scanning the inner radius of the annular noise filter $k_{in}$ from 1 to ~70 and fixing width $dk=2$. Generates a csv file "data_k_r2.csv", which is read and plotted in the notebook ErrorMap_norm.ipynb and Beam_norm0403.ipynb.
+
+### BEAM_leakage_filterk3.py:
+Calculates the leakage level as a function of normalized noise in $k$ space, by fixing $k_{in}$ and increasing radius of the annular noise filter $dk$ from 1 to ~50. Generates a csv file "data_k_kin{}.csv", which is read and plotted in the notebook ErrorMap_norm.ipynb and Beam_norm0403.ipynb.
+
+### Beam_norm0403.ipynb:
+Normalize unperturbed & perturbed beams by matching their sums. 
+
+Also generates some thesis plots - amplitude/phase perturbed screen, beam window difference, leakage vs. noise (fixing noise in k space) for different $k_{in}$ values, leakage vs. $k_{in}$, leakage vs. $dk$.
+
+
 
 
 ## From CMB computer:
