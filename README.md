@@ -19,10 +19,10 @@
     Compares the beam window difference between a perturbed and unperturbed one.
 
 - ### BEAM_leakage.py: 
-Generates a plot of leakage level (error^2) as a function of error amplitude for the fixed $k_{in}=15$ and $k_{out}=25$ and after noise normalization
+    Generates a plot of leakage level (error^2) as a function of error amplitude for the fixed $k_{in}=15$ and $k_{out}=25$ and after noise normalization
 
 - ### r_calc: 
-A directory containing calculation of bias in r.
+    A directory containing calculation of bias in r.
 
     - camb_96896687_totcls.dat.txt: CMB power spectrum downloaded from the CAMB webpage
 
@@ -35,30 +35,30 @@ A directory containing calculation of bias in r.
     - run_phase.sh: shell script that runs RnNoise.py and plot_r.py altogether for phase perturbation.
 
 - ### BEAM_leakage_filterk1.py:
-Calculates the leakage level as a function of normalized noise in $k$ space, by scanning the inner radius of the annular noise filter $k_{in}$ from 1 to ~70 and fixing width $dk=2$. Generates a csv file "data_k_r2.csv", which is read and plotted in the notebook ErrorMap_norm.ipynb and Beam_norm0403.ipynb.
+    Calculates the leakage level as a function of normalized noise in $k$ space, by scanning the inner radius of the annular noise filter $k_{in}$ from 1 to ~70 and fixing width $dk=2$. Generates a csv file "data_k_r2.csv", which is read and plotted in the notebook ErrorMap_norm.ipynb and Beam_norm0403.ipynb.
 
 - ### BEAM_leakage_filterk3.py:
-Calculates the leakage level as a function of normalized noise in $k$ space, by fixing $k_{in}$ and increasing radius of the annular noise filter $dk$ from 1 to ~50. Generates a csv file "data_k_kin{}.csv", which is read and plotted in the notebook ErrorMap_norm.ipynb and Beam_norm0403.ipynb.
+    Calculates the leakage level as a function of normalized noise in $k$ space, by fixing $k_{in}$ and increasing radius of the annular noise filter $dk$ from 1 to ~50. Generates a csv file "data_k_kin{}.csv", which is read and plotted in the notebook ErrorMap_norm.ipynb and Beam_norm0403.ipynb.
 
 - ### Beam_norm0403.ipynb:
-Normalize unperturbed & perturbed beams by matching their sums. 
+    Normalize unperturbed & perturbed beams by matching their sums. 
 
-Also generates some thesis plots - amplitude/phase perturbed screen, beam window difference, leakage vs. noise (fixing noise in k space) for different $k_{in}$ values, leakage vs. $k_{in}$, leakage vs. $dk$.
+    Also generates some thesis plots - amplitude/phase perturbed screen, beam window difference, leakage vs. noise (fixing noise in k space) for different $k_{in}$ values, leakage vs. $k_{in}$, leakage vs. $dk$.
 
 - ### ErrorMap_norm.ipynb:
-Contains some tests normalizing error maps based on the Parseval theorem. Also reads BEAM_leakage_filterk1.py and BEAM_leakage_filterk3.py output csv files and plots leakage level vs. $k_{in}$. 
+    Contains some tests normalizing error maps based on the Parseval theorem. Also reads BEAM_leakage_filterk1.py and BEAM_leakage_filterk3.py output csv files and plots leakage level vs. $k_{in}$. 
 
 - ### BEAM_leakVSk_RMSfix.py:
-By fixing RMS level in real space, this script calculates the leakage level as a function of $k_{in}$, and outputs to RMS{}_leak_k_{}.csv which is read and plotted in Leak_k_fixRMS.ipynb.
+    By fixing RMS level in real space, this script calculates the leakage level as a function of $k_{in}$, and outputs to RMS{}_leak_k_{}.csv which is read and plotted in Leak_k_fixRMS.ipynb.
 
 - ### Leak_k_fixRMS.ipynb:
-Includes some initial calculation of normalizing RMS errors. Also generates figures of leakage vs. $k_{in}$ (Fig.12) and Fig.18 in my thesis.
+    Includes some initial calculation of normalizing RMS errors. Also generates figures of leakage vs. $k_{in}$ (Fig.12) and Fig.18 in my thesis.
 
 - ### PowerSpectrum.ipynb:
-Generates leakage power spectra with measured $\Delta r$ labeled. 
+    Generates leakage power spectra with measured $\Delta r$ labeled. 
 
 - ### thesis_plot.ipynb:
-Generates some figures used in my thesis: Fig.13, Fig.17, Fig.16, Fig.14
+    Generates some figures used in my thesis: Fig.13, Fig.17, Fig.16, Fig.14
 
 
 ## From CMB computer:
