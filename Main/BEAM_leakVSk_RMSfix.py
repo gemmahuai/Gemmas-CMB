@@ -23,6 +23,7 @@ if (len(sys.argv)!=9):
     print('Wrong inputs!')
     print('Usage: python BEAM_leakVSk_RMSfix.py N_screen N_theta_interp screenD sigma angle(deg) truncation(y/n) "phase/amp" RMS_want')
     # ex. python BEAM_leakVSk_RMSfix.py 4096 1024 10.0 1.0 5.0 y amp 0.01
+    # RMS_want: specify an RMS level which will be fixed in the calculation
     sys.exit()
 # input parameters & initialize
 N_screen = np.int(sys.argv[1])
@@ -35,15 +36,15 @@ option = str(sys.argv[7])
 RMS_want = float(sys.argv[8])
 #k_in = np.arange(5,30,5)
 k_in = np.arange(1,72,2)
-amp = 0.1 # need to pick amp each time 
-dk = 2
-error = np.zeros(len(k_in)) #leakage = error^2
-noise_norm = np.zeros_like(error)
+amp = 0.1 # the scaling factor C_1 or C_2. this is used for interpolation and generating Fig.18 in my thesis. May vary depending on the choice of RMS_want since we want C_1 or C_2 to roughly match the scaling factor corresponding to RMS_want
+dk = 2 # width of the annular filter 
+error = np.zeros(len(k_in))  # initialize the relative beam window difference
+noise_norm = np.zeros_like(error) # initialize leakage level
 #k_in = np.arange(0,screen1['kx'].max()-2,2)
 k_out = k_in+dk
-RMS = np.array([])
+RMS = np.array([]) # initialize RMS of error maps used for generating Fig.18 
 RMS_sq = np.array([])
-RMS_test = np.array([])
+RMS_test = np.array([]) # initialize RMS of error maps used for actual calculation of leakage (they should be fixed...)
 
 ### define functions
 def gaussian(x, A, sigma, x0): 
@@ -55,8 +56,12 @@ def analytical(l, sigma): # blm
 def linear(x, k, b):
     return(k*x+b)
 def sqrt(x, k, b, c):
+    """square root fit to the RMS vs. k_in"""
     return(k*np.sqrt(x+c)+b)
 
+"""
+line 65 to 101: generate error masks with different k_in and measure RMS of each. Then do a square root fit of RMS vs. k_in, which will be used later to fix RMS 
+"""
 ### create a screen and measure RMS of each k_in
 screen1 = {}
 screen1['N'] = N_screen
@@ -97,6 +102,12 @@ sp_scale = interp.InterpolatedUnivariateSpline(k_in, scaling) # spline for the s
 
 
 
+"""
+line 109 to 198: 
+    generate an unperturbed screen and a perturbed one. 
+    The RMS level of the error mask used to perturbed the screen remains constant by using the sqrt fit derived above and scaling the factors C_1 or C_2.
+    Then the leakage level is found as a function of k_in.
+"""
 # unperturbed perfect gaussian create E screen [m]
 screen = {}
 screen['N'] = N_screen
@@ -191,10 +202,14 @@ for i in range(len(k_in)):
 
 
 ### write to a csv file
-# with open('data/RMS{}_leak_k_{}.csv'.format(RMS_want, option), 'w') as f:
-with open('data/test.csv', 'w') as f:
+with open('./RMS{}_leak_k_{}.csv'.format(RMS_want, option), 'w') as f:
+#with open('data/test.csv', 'w') as f:
    writer = csv.writer(f, delimiter='\t')
    writer.writerows(zip(k_in, error**2, scaling, RMS_test))
+   # 1st col: inner radius k_in (fixing dk)
+   # 2nd col: leakage level
+   # 3rd col: scaling factor of error maps (C_1 or C_2) for a fixed given RMS level
+   # RMS of each filtered error map (should be the same with <1% variation)
 
 # fig = plt.figure(figsize=(10,8))
 # for i in range(len(k_in)):
