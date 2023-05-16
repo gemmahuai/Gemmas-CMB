@@ -63,11 +63,29 @@
 
 ## From CMB computer:
 
-Fraunhofer
+- ### Fraunhofer
+    A directory containing basic Fraunhofer calculation and visualization.
+
+    - Fhcalc.py: copied to Main
+
+    - Fhplot.py: copied to Main
+
+    - Fhcalc_torch.py: pytorch version of Fraunhofer calculation, may be faster...
+
+    - Fhplot_torch.py: pytorch version of Fraunhofer visualization, may be faster...
+
+    - test_torch_E0.png / test_torch_E1.png: generated using the pytorch version.
+
+- ### Error
+    Includes some error mask calculation and tests.
+
+    - ErrMask.py: copied to Main
+
+    - Fhcalc.py: same as before
+
+    - Amp_planewave.py: 
 
 Beam
-
-Error
 
 ## My Jupyter notebooks:
 

@@ -55,5 +55,5 @@ for b_i in B:
   plt.plot(screeni['X'][0], np.abs(ffti[512]),label='abs')
   plt.xlim(3.5,6.5)
   #plt.ylim(-8e3,8e3)
-  plt.legend();
-  plt.savefig('/home/gemma/Error/wave_amp_{}.png'.format(b_i))
+  plt.legend()
+  plt.savefig('./wave_amp_{}.png'.format(b_i))
