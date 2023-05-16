@@ -45,6 +45,8 @@ Normalize unperturbed & perturbed beams by matching their sums.
 
 Also generates some thesis plots - amplitude/phase perturbed screen, beam window difference, leakage vs. noise (fixing noise in k space) for different $k_{in}$ values, leakage vs. $k_{in}$, leakage vs. $dk$.
 
+### ErrorMap_norm.ipynb:
+Containing some tests normalizing error maps based on the Parseval theorem. Also reads BEAM_leakage_filterk1.py and BEAM_leakage_filterk3.py output csv files and plots leakage level vs. $k_{in}$. 
 
 
 
