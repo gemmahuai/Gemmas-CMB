@@ -54,6 +54,8 @@ By fixing RMS level in real space, this script calculates the leakage level as a
 ### Leak_k_fixRMS.ipynb:
 Includes some initial calculation of normalizing RMS errors. Also generates figures of leakage vs. $k_{in}$ (Fig.12) and Fig.18 in my thesis.
 
+### PowerSpectrum.ipynb:
+Generates leakage power spectra with measured $\Delta r$ labeled. 
 
 ### thesis_plot.ipynb:
 Generates some figures used in my thesis: Fig.13, Fig.17, Fig.16, Fig.14
