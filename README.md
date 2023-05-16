@@ -48,6 +48,12 @@ Also generates some thesis plots - amplitude/phase perturbed screen, beam window
 ### ErrorMap_norm.ipynb:
 Containing some tests normalizing error maps based on the Parseval theorem. Also reads BEAM_leakage_filterk1.py and BEAM_leakage_filterk3.py output csv files and plots leakage level vs. $k_{in}$. 
 
+### BEAM_leakVSk_RMSfix.py:
+
+
+
+### thesis_plot.ipynb:
+Generates some figures used in my thesis: Fig.13, Fig.17, Fig.16, Fig.14
 
 
 ## From CMB computer:
