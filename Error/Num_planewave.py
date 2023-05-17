@@ -1,3 +1,12 @@
+"""
+usage: python Amp_planewave.py <number of screens> 
+ex. python Amp_planewave.py 3
+    3 means that three screens will be generated. For the first one, there will be a single wave added, and a figure is created plotting FT of the screen
+    For the second one, there will be two waves added, and another figure created.
+    For the third one, there will be three waves added, and another figure created. 
+    Figure name is wave_num_plot_{}.png'.format(i) plotting the FT and wave_num_im_{}.png'.format(i) showing 2D image of FT
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
@@ -58,7 +67,7 @@ for i in N_pw:
   plt.xlim(3.5,6.5)
   #plt.ylim(-8e3,8e3)
   plt.legend()
-  plt.savefig('/home/gemma/Error/wave_num_plot_{}.png'.format(i))
+  plt.savefig('./wave_num_plot_{}.png'.format(i))
 
   fig = plt.figure(figsize=(18,6))
   #plt.rcParams['figure.figsize'] = [25, 7]
@@ -80,4 +89,4 @@ for i in N_pw:
   plt.ylim(1900,2200)
   plt.title('abs')
   plt.colorbar()  
-  plt.savefig('/home/gemma/Error/wave_num_im_{}.png'.format(i))
+  plt.savefig('./wave_num_im_{}.png'.format(i))

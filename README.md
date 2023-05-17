@@ -77,15 +77,22 @@
     - test_torch_E0.png / test_torch_E1.png: generated using the pytorch version.
 
 - ### Error
-    Includes some error mask calculation and tests.
+    A directory including some error mask calculation and tests.
 
     - ErrMask.py: copied to Main
 
     - Fhcalc.py: same as before
 
-    - Amp_planewave.py: 
+    - Amp_planewave.py: To understand why the on-sky beam of a phase perturbed screen has shell structures by adding sine waves with different frequency to a screen. This script takes a slice and generates a plot of the FT of a screen with multiple sine waves of different k added. output images: 'wave_amp_{}.png'.format(b_i).
 
-Beam
+    - Num_planewave.py: Similar to Amp_planewave.py but generates multiple screens with added sine waves of different k. Output images: wave_num_plot_{}.png'.format(i) plotting the FT and wave_num_im_{}.png'.format(i) showing 2D image of FT.
+
+    - Num_planewave_single.py: Same as Num_planewave.py except that only one screen is generated with specified number of waves added. Output images: singlewave_num_plot_{}.png'.format(n_pw) plotting the FT and singlewave_num_im_{}.png showing 2D image of the FT
+
+ - ### Beam
+    A directory including beam calculations.
+
+    
 
 ## My Jupyter notebooks:
 

@@ -1,3 +1,10 @@
+"""
+usage: python Amp_planewave.py <number of waves> 
+ex. python Amp_planewave.py 2
+    2 means that 2 sine waves will be added to a screen.
+    Figure name is singlewave_num_plot_{}.png'.format(n_pw) plotting the FT and singlewave_num_im_{}.png showing 2D image of FT
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
@@ -44,10 +51,10 @@ for j in range(n_pw):
     screeni['E'] = screeni['E'] * np.exp(1j*B*pw_j)
 
 fig = plt.figure(figsize=(8,6))
-#plt.imshow(np.real(screen['E']))
-#plt.colorbar()
-#plt.show()
-#plt.rcParams['figure.figsize'] = [15, 10]
+# plt.imshow(np.real(screen['E']))
+# plt.colorbar()
+# plt.show()
+# plt.rcParams['figure.figsize'] = [15, 10]
 ffti = np.fft.fftshift(np.fft.fft2(np.fft.fftshift(screeni['E'])))
 plt.plot(screeni['X'][0], np.real(ffti[2048]),label='real')
 plt.plot(screeni['X'][0], np.imag(ffti[2048]),label='imag')
@@ -55,7 +62,7 @@ plt.plot(screeni['X'][0], np.abs(ffti[2048]),label='abs')
 plt.xlim(3.5,6.5)
 #plt.ylim(-8e3,8e3)
 plt.legend()
-plt.savefig('/home/gemma/Error/singlewave_num_plot_{}.png'.format(n_pw))
+plt.savefig('./singlewave_num_plot_{}.png'.format(n_pw))
 
 fig = plt.figure(figsize=(18,6))
 #plt.rcParams['figure.figsize'] = [25, 7]
@@ -77,4 +84,4 @@ plt.xlim(1950,2150)
 plt.ylim(1950,2150)
 plt.title('abs')
 plt.colorbar()  
-plt.savefig('/home/gemma/Error/singlewave_num_im_{}.png'.format(n_pw))
+plt.savefig('./singlewave_num_im_{}.png'.format(n_pw))

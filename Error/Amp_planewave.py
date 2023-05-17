@@ -1,3 +1,9 @@
+"""
+usage: python Amp_planewave.py <number of amplitude> 
+ex. python Amp_planewave.py 3
+for each sine wave amplitude, a screen with multiple sine waves added is created, and a figure is created plotting FT of the screen in 1D. 
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
@@ -10,7 +16,6 @@ plt.rcParams['figure.figsize'] = [8,6]
 import datetime as dt
 import sys
 import Fhcalc
-
 
 def Plane_wave(k,size,A,theta):
   """A = amplitude
@@ -26,8 +31,8 @@ def Plane_wave(k,size,A,theta):
 
 n = int(sys.argv[1]) # number of amplitudes from 0.1 to 100
 B = 10**np.linspace(-1,2,n)
-# input number of plane waves
-N_pw = 5
+N_pw = 5 # number of plane waves
+
 for b_i in B:
   pw = []
   screeni = {}
