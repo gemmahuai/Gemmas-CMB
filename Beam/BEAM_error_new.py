@@ -21,6 +21,7 @@ import ErrMask
 if (len(sys.argv)!=9):
     print('Wrong inputs!')
     print('Usage: python BEAM_error_new.py N_screen N_theta_interp screenD sigma angle(deg) truncation(y/n) phase/amp amplitude')
+    # ex. python BEAM_error_new.py 4096 1024 10.0 1.0 3.0 y amp 1.0
     sys.exit()
 # input parameters
 N_screen = np.int(sys.argv[1])
@@ -140,7 +141,6 @@ plt.imshow(fft_I1 - fft_I0, interpolation=None)
 plt.colorbar()
 plt.xlim(int(N_theta*0.43),int(N_theta*0.57)) 
 plt.ylim(int(N_theta*0.43),int(N_theta*0.57))
-plt.subplot()
 plt.title('FT(I) difference')
 plt.subplot(1,4,3)
 plt.plot(l_vec,bin_mean0,color='blue', lw=2, label='binned unperturbed') # normalize the numerical solution
@@ -162,7 +162,4 @@ else:
   plt.ylim(0.7*bin_mean1.max(), 1.1*bin_mean0.max())
 
 plt.legend()
-plt.savefig('/home/gemma/Beam/Spectrum_N{}N{}_D{}_sig{}_ang{}_{}{}.png'.format(N_screen,N_theta,D,sigma,maxdeg,option,amp))
-
-
-
+plt.savefig('./Spectrum_N{}N{}_D{}_sig{}_ang{}_{}{}.png'.format(N_screen,N_theta,D,sigma,maxdeg,option,amp))

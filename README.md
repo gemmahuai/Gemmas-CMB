@@ -21,6 +21,9 @@
 - ### BEAM_leakage.py: 
     Generates a plot of leakage level (error^2) as a function of error amplitude for the fixed $k_{in}=15$ and $k_{out}=25$ and after noise normalization
 
+- ### BEAM_LeakVSk.py:
+    Fixes the error amplitude (noise level in k space), and plots leakage level as a function of $k_{in}$. Also generates a csv file LeakvsK_{}{}.csv'.format(option,amp). 
+
 - ### r_calc: 
     A directory containing calculation of bias in r.
 
@@ -92,7 +95,33 @@
  - ### Beam
     A directory including beam calculations.
 
-    
+    - data: a directory including all csv data files. 
+
+    - r: copied to Main (a directory of $\Delta r$ calculation).
+
+    - Fhcalc.py: Fraunhofer calculation
+
+    - ErrMask.py: Error mask calculation
+
+    - BEAM_error_difference.py: copied to Main
+
+    - BEAM_error_new.py: plots the beam window difference in $\ell$ space by taking FT of the perturbed and unperturbed on-sky beams and differencing in $\ell$ space, as a test version. For my thesis, I took the on-sky beam difference and then FT the difference. 
+
+    - BEAM_error.py: generates a perturbed and unperturbed beam, and compares them with analytical solution of a Gaussian beam window. No matched in this version...
+
+    - BEAM_test.py: tests if the numerical and analytical solution of a Gaussian beam agrees - not really in this version.
+
+    - BEAM_test_compare.py: this python script reads several text files containing numerical solution (1st column) using different interpolation angles and analytical solution (2nd column), and plots all beam windows in the same figure for comparison.
+
+    - BEAM_test_new.py: copied to Main
+
+    - BEAM_leakage.py: copied to Main
+
+    - BEAM_LeakVSk.py: copied to Main
+
+    - BEAM_leakage_filterk1.py: copied to Main
+
+    - BEAM_leakage_filterk2.py: 
 
 ## My Jupyter notebooks:
 
