@@ -135,9 +135,24 @@
 
     - run.sh: runs BEAM_error_difference.py with different error amplitudes, given phase or amp option.
 
-## My Jupyter notebooks:
+## Notebooks - Jupyter notebooks on my local machine
 
-Notebooks
+- Data: A directory containing output data files and CAMB power spectra. These are plotted in some notebooks.
+
+- ErrorMask.ipynb: copied to Main
+
+- ErrorMap_norm.ipynb: copied to Main
+
+- Beam_norm0403.ipynb: copied to Main
+
+- Leak_k_fixRMS.ipynb: copied to Main
+
+- PowerSpectrum.ipynb: copied to Main
+
+- thesis_plot.ipynb: copied to Main
+
+- ApertureDiffraction.ipynb: 
+
 
 ## Google collab notebooks:
 
