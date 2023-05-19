@@ -62,7 +62,7 @@ def sqrt(x, k, b, c):
 """
 line 65 to 101: generate error masks with different k_in and measure RMS of each. Then do a square root fit of RMS vs. k_in, which will be used later to fix RMS 
 """
-### create a screen and measure RMS of each k_in
+### create multiple error maps with varying k_in, and measure RMS of map.
 screen1 = {}
 screen1['N'] = N_screen
 screen1['D'] = D
@@ -104,6 +104,7 @@ sp_scale = interp.InterpolatedUnivariateSpline(k_in, scaling) # spline for the s
 
 """
 line 109 to 198: 
+    Now repeat the leakage calculation
     generate an unperturbed screen and a perturbed one. 
     The RMS level of the error mask used to perturbed the screen remains constant by using the sqrt fit derived above and scaling the factors C_1 or C_2.
     Then the leakage level is found as a function of k_in.

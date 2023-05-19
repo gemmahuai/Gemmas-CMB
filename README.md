@@ -52,7 +52,7 @@
     Contains some tests normalizing error maps based on the Parseval theorem. Also reads BEAM_leakage_filterk1.py and BEAM_leakage_filterk3.py output csv files and plots leakage level vs. $k_{in}$. 
 
 - ### BEAM_leakVSk_RMSfix.py:
-    By fixing RMS level in real space, this script calculates the leakage level as a function of $k_{in}$, and outputs to RMS{}_leak_k_{}.csv which is read and plotted in Leak_k_fixRMS.ipynb.
+    By fixing RMS level in real space, this script calculates the leakage level as a function of $k_{in}$, and outputs to RMS{}_leak_k_{}.csv, including $k_{in}$, leakage level, scaling factors used for normalization, and RMS, which is read and plotted in Leak_k_fixRMS.ipynb.
 
 - ### Leak_k_fixRMS.ipynb:
     Includes some initial calculation of normalizing RMS errors. Also generates figures of leakage vs. $k_{in}$ (Fig.12) and Fig.18 in my thesis.
@@ -121,7 +121,19 @@
 
     - BEAM_leakage_filterk1.py: copied to Main
 
-    - BEAM_leakage_filterk2.py: 
+    - BEAM_leakage_filterk2.py: studies the leakage level as a function of error scaling factor $C_1$ or $C_2$ with different filter radii. $k_{in}$ increases while fixing the total area of the annulus and finding the corresponding $k_{out}$. Generates a csv file, including $k_{out}$, $C_1$ or $C_2$, leakage level, and normalized noise level. 
+
+    - BEAM_leakage_filterk3.py: copied to Main
+
+    - BEAM_leakVSk_dk.py: fixes the noise level in k space, and plots the leakage level as a function of the annular width $dk$, fixing $k_{in}$. Generates a csv file including width and leakage.
+
+    - BEAM_leakVSk_RMSfix.py: copied to Main
+
+    - BEAM_leakVSk_RMSfix_dk.py: fixes the noise level in k space, and plots leakage level as a function of the width $dk$, fixing $k_{in}$. Generates a csv file. Not very helpful...
+
+    - interp_test.py: tests the difference between FT and iFT of an on-sky beam...
+
+    - run.sh: runs BEAM_error_difference.py with different error amplitudes, given phase or amp option.
 
 ## My Jupyter notebooks:
 

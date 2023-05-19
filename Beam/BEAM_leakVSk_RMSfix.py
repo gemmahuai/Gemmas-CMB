@@ -57,7 +57,7 @@ def linear(x, k, b):
 def sqrt(x, k, b, c):
     return(k*np.sqrt(x+c)+b)
 
-### create a screen and measure RMS of each k_in
+### create multiple error maps with varying k_in, and measure RMS of map.
 screen1 = {}
 screen1['N'] = N_screen
 screen1['D'] = D
@@ -76,12 +76,12 @@ for i in range(len(k_in)):
     rms_nosq = ErrMask.rms(emap_E) # rms
     RMS = np.append(RMS, rms_nosq)
 
-### fit RMS vs. k_in
-(fit1, err1) = opt.curve_fit(linear, k_in, RMS_sq, absolute_sigma=True) #rms square: fit a line
+### fit RMS vs. k_in (square root fitting, see Main/Leak_k_fixRMS.ipynb for details.)
+#(fit1, err1) = opt.curve_fit(linear, k_in, RMS_sq, absolute_sigma=True) #rms square: fit a line
 (fit2, err2) = opt.curve_fit(sqrt, k_in, RMS,absolute_sigma=True) # rms: fit sqrt
 scaling = RMS_want * (amp/sqrt(k_in, fit2[0], fit2[1], fit2[2]))
-sp = interp.InterpolatedUnivariateSpline(k_in, sqrt(k_in, fit2[0], fit2[1], fit2[2])) # spline for the RMS error
-sp_scale = interp.InterpolatedUnivariateSpline(k_in, scaling) # spline for the scaling factor
+sp = interp.InterpolatedUnivariateSpline(k_in, sqrt(k_in, fit2[0], fit2[1], fit2[2])) # spline for the RMS error vs. k_in
+sp_scale = interp.InterpolatedUnivariateSpline(k_in, scaling) # spline for the scaling factor as a func of k_in, used later to normalize different error masks
 ### plot RMS, RMS^2 vs. k_in and fits
 # fig = plt.figure(figsize=(14,5))
 # plt.subplot(1,2,1)
@@ -96,7 +96,7 @@ sp_scale = interp.InterpolatedUnivariateSpline(k_in, scaling) # spline for the s
 # plt.ylabel(r'$RMS^2$')
 
 
-
+### Now repeat the leakage calculation
 # unperturbed perfect gaussian create E screen [m]
 screen = {}
 screen['N'] = N_screen

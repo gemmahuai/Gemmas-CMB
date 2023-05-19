@@ -55,10 +55,6 @@ def analytical(l, sigma): # blm
 def rms(x):
     return np.sqrt(np.mean(x**2))
 
-# fix area of filter at A, given an inner radius, find the corresponding outer radius
-def r_out(r_in, A):
-    rout = np.sqrt((A/np.pi) + r_in**2)
-    return(rout)
 
 
 # unperturbed perfect gaussian create E screen [m]

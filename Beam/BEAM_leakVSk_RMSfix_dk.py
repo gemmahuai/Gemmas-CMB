@@ -1,6 +1,6 @@
 ### 04/22/2023 updated
 ### this python script fixes the RMS error in real space by varying the error scaling factor 
-### and plots leakage level as a function of k_in
+### and plots leakage level as a function of dk of the annulus (fixed k_in)
 
 import numpy as np
 import matplotlib.pyplot as plt
