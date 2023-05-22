@@ -163,7 +163,7 @@
 
 - Fraunhofer.ipynb: includes a Fraunhofer calculation I wrote for fun when taking optics in the spring of 2022, and some tests of a screen perturbed by a dot representing local boost/reduction.
 
-- Interpolation_test.ipynb: tests the interpolation algorithm by identifying the 1st, 2nd, ... minima and compare those to the expected values - 1.22 $\frac{\lambda}{D}$, 2.23 $\frac{\lambda}{D}$, 3.24 $\frac{\lambda}{D}$. Matched.
+- Interpolation_test.ipynb: tests the interpolation algorithm by identifying the 1st, 2nd, ... minima and compare those to the expected values - $1.22\frac{\lambda}{D}$, $2.23\frac{\lambda}{D}$, $3.24\frac{\lambda}{D}$. Matched.
 
 - Pytorch.ipynb: tests FT using pytorch for optimization...
 
