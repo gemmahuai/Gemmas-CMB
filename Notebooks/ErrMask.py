@@ -23,8 +23,8 @@ def filter_annulus_amp(screen, A, k_in, k_out):
     WN_FT_fil = WN_FT*cut1*cut2 # filtered WN in fourier space
     WN_fil = np.real(np.fft.fftshift(np.fft.ifft2(np.fft.fftshift(WN_FT_fil)))) # filtered WN in real space
     screen['E'] = (1 + A*WN_fil) * screen['E']
-    return(A*WN_fil) #return amplitude in real space
-
+    return(A*WN_fil) #return amplitude
+    
 
 def filter_annulus_phase(screen, B, k_in, k_out):
     """
@@ -63,7 +63,7 @@ def filter_WN(screen, A, k_in, k_out):
     cut2 = np.where(k>k_out, 0, 1)
     WN_FT_fil = WN_FT*cut1*cut2 # filtered WN in fourier space
     WN_fil = np.fft.fftshift(np.fft.ifft2(np.fft.fftshift(WN_FT_fil))) # filtered WN in real space
-    return(WN_fil)
+    return(A*WN_fil, WN_FT_fil) # return scaled error map in real space and original map in fourier space
     
 def rms(error_map):
     """

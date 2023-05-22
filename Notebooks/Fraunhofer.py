@@ -21,7 +21,7 @@ def Initialize(screen):
     screen['X'] = np.tile(xvec,(len(xvec),1))
     screen['Y'] = screen['X'].T #np.flipud(screen['X'].T)
     screen['E'] = np.ones((n,n))
-    dk = 2*np.pi/screen['D'] #the separation in k-space corresponding to the separation in physical space
+    dk = 1/screen['D'] #the separation in k-space corresponding to the separation in physical space # 2pi/D
     screen['dk']=dk
     kvec = dk*np.fft.fftfreq(n)*n #largest k corresponds to smallest physical resolution on the aperture
     screen['kvec'] = kvec
@@ -123,13 +123,13 @@ def Project_I_on_thetagrid(theta_vec,screen,lam):
     thetax_grid, thetay_grid = np.meshgrid(theta_vec,theta_vec)
     #thetay_grid = np.flipud(thetay_grid)
     #
-    kphot = 2*np.pi/lam    # photon k vector.  kphot = 2*np.pi/lam. must be consistent with dk 
+    kphot = 1/lam    # photon k vector. # 2pi/lambda
     #
     # Find kx and ky at each (thetax,thetay) grid spot
     #
-    #kx_grid = kphot*thetax_grid/(np.pi/2) # linear
+    #kx_grid = kphot*thetax_grid/(np.pi/2) # fix this
     #ky_grid = kphot*thetay_grid/(np.pi/2)
-    kx_grid = kphot*np.sin(thetax_grid) #non-linear 
+    kx_grid = kphot*np.sin(thetax_grid) 
     ky_grid = kphot*np.sin(thetay_grid)
     #
     # Now look at the original kx,ky map of our FT screen.

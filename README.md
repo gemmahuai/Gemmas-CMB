@@ -151,7 +151,24 @@
 
 - thesis_plot.ipynb: copied to Main
 
-- ApertureDiffraction.ipynb: 
+- ApertureDiffraction.ipynb: the initial Fraunhofer calculation notebook written by Prof. Ruhl.
+
+- Fraunhofer.py: same as Fhcalc.py, copied to Main
+
+- ErrMask.py: copied to Main
+
+- BEAM_error_difference.ipynb: compares the beam window difference between a perturbed and unperturbed screen. Also generates a plot of leakage level as a function of error amplitude for a fixed k_in and k_out (before noise normalization)... 
+
+- CMB_SummerSchool.ipynb: some codes from https://github.com/CMB-S4/CMBAnalysis_SummerSchool
+
+- Fraunhofer.ipynb: includes a Fraunhofer calculation I wrote for fun when taking optics in the spring of 2022, and some tests of a screen perturbed by a dot representing local boost/reduction.
+
+- Interpolation_test.ipynb: tests the interpolation algorithm by identifying the 1st, 2nd, ... minima and compare those to the expected values - 1.22 $\frac{\lambda}{D}$, 2.23 $\frac{\lambda}{D}$, 3.24 $\frac{\lambda}{D}$. Matched.
+
+- Pytorch.ipynb: tests FT using pytorch for optimization...
+
+- scratch.ipynb: play with Fraunhofer calculation...
+
 
 
 ## Google collab notebooks:
