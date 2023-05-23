@@ -171,6 +171,16 @@
 
 
 
-## Google collab notebooks:
+## Collab - Google collab notebooks:
 
-Collab
+- the initial Fraunhofer calculation notebook written by Prof. Ruhl, with some tests.
+
+- beam difference.ipynb: checks the interpolation centering, beam verification; compares the FT difference...
+
+- beam_test.ipynb: try to get the numerical solution agree with the analytical solution. But they don't match in this notebook. 
+
+- beam_error.ipynb: more tests to verify the beam calculation. no success in this notebook either.
+
+- blm_error.ipynb: more tests. Finally matched at the very end!
+
+
