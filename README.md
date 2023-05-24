@@ -183,4 +183,13 @@
 
 - blm_error.ipynb: more tests. Finally matched at the very end!
 
+- CPU_benchmark.ipynb: compares performace of CPU/GPU Fraunhofer calculation. Contains pytorch version of all Fraunhofer functions. 
+
+- error_test.ipynb: adding plane waves to amplitude/phase, and study the FT behavior. 
+
+- FraunhoferCalc.ipynb: some tests regarding our Fraunhofer calculation.
+
+- Interpolation_test.ipynb: tests the interpolation algorithm by identifying minima. Also tests beam verification (failed...) with different screen parameters.
+
+
 
