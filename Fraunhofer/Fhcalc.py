@@ -8,7 +8,7 @@ np.set_printoptions(threshold=sys.maxsize)
 import scipy.interpolate as interp
 
 def Initialize(screen):
-    # must run this first
+    # must run this first to initialize a variables
     # It modifies the screen dictionary in place.
     # Before calling this, you have to first define 
     #   screen['N'] == number of pixels across the screen, and
