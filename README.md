@@ -191,5 +191,11 @@
 
 - Interpolation_test.ipynb: tests the interpolation algorithm by identifying minima. Also tests beam verification (failed...) with different screen parameters.
 
+- PhaseShift.ipynb: tests a screen with plane wave added. 
+
+- test_gpu.ipynb: test gpu implementation with cupy.
+
+- Untitled0.ipynb: Fraunhofer function I wrote for the optics class...
+
 
 
