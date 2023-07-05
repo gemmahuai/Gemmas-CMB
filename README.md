@@ -9,6 +9,15 @@
 - ### ErrMask.py: 
     Functions used for generating errors, including amplitude and phase errors, and rms calculation
 
+- ### TMA_maincalc.ipynb:
+    All major calculations for TMA - E-field screen, on-sky beam, beam window, beam verification, beam window leakage, $\Delta r$, and leakage power spectra.
+
+- ### Params_calc.ipynb:
+    Justifies some parameter choices - $k_{in}$ and truncation radius.
+
+    Includes study of leakage as a function of $k_{in}$ in two different normalization ways, by fixing noise level in k space and in real space.
+
+
 - ### ErrorMask.ipynb: 
     Plots the annular noise filter and filtered noise, and compares unperturbed and perturbed screens. **Fig.5**
 

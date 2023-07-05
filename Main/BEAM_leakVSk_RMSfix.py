@@ -99,9 +99,6 @@ sp_scale = interp.InterpolatedUnivariateSpline(k_in, scaling) # spline for the s
 # plt.plot(k_in, linear(k_in, fit1[0], fit1[1]), label='fit')
 # plt.xlabel(r'$k_{in}$')
 # plt.ylabel(r'$RMS^2$')
-
-
-
 """
 line 109 to 198: 
     Now repeat the leakage calculation

@@ -140,7 +140,7 @@ for i in range(len(amp)):
     
     
     ### plot the leakage spectrum and T->B power spectrum
-    spline = interp.InterpolatedUnivariateSpline(l_vec, beam_diff_rela**2)
+    spline = interp.InterpolatedUnivariateSpline(l_vec, beam_diff_rela**2, k=1)
     leakage = spline(ll)
     # plt.loglog(ll,T*leakage, label='leakage {}'.format(amp[i])) 
     
